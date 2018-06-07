@@ -1,4 +1,4 @@
-## Boas Pessoal como é que é?
+## Intro
 
 Já dizia a minha avó 
 
@@ -6,6 +6,8 @@ Já dizia a minha avó
 O que é preciso é saúde!
 ```
 
-E pronto, é isto. Check out my [Univerity Projects](http://www.ptalmeida.com/UniveristyProjects/)
+## Stuff
+
+[University Projects](http://www.ptalmeida.com/UniveristyProjects/)
 
 ![Image](https://i.imgur.com/WGfV6pa.jpg)
