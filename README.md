@@ -1,4 +1,4 @@
-# My small personal website
+# My personal website
 
 Made with [Start Bootstrap - Stylish Portfolio](https://startbootstrap.com/template-overviews/stylish-portfolio/)
 
