@@ -6,84 +6,89 @@ html {
 
 body {
   @include body-font;
-}
 
-// Custom Button Size
-.btn-xl {
-  padding: 1.25rem 2.5rem;
-}
-
-// Content Section
-.content-section {
-  padding-top: 7.5rem;
-  padding-bottom: 7.5rem;
-}
-
-.content-section-heading {
-  h2 {
-    font-size: 3rem;
+  // Custom Button Size
+  .btn-xl {
+    padding: 1.25rem 2.5rem;
   }
-  h3 {
-    font-size: 1rem;
-    text-transform: uppercase;
+
+  // Content Section
+  .content-section {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
   }
-}
 
-// Typography
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
-}
-
-.text-faded {
-  color: fade-out($white, 0.3);
-}
-
-/* Map */
-
-.map {
-  height: 30rem;
-}
-
-@media(max-width: 992px) {
-  .map {
-    height: 75%;
+  .content-section-heading {
+    h2 {
+      font-size: 3rem;
+    }
+    h3 {
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
   }
-}
 
-.map iframe {
-  pointer-events: none;
-}
+  // Typography
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+  }
 
-// Scroll to top button
-.scroll-to-top {
-  position: fixed;
-  right: 15px;
-  bottom: 15px;
+  .text-faded {
+    color: fade-out($white, 0.3);
+  }
 
-  display: none;
+  // Scroll to top button
+  .scroll-to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
 
-  width: 50px;
-  height: 50px;
+    display: none;
 
-  text-align: center;
+    width: 50px;
+    height: 50px;
 
-  color: white;
-  background: fade-out($gray-800, .5);
+    text-align: center;
 
-  line-height: 45px;
-  &:focus,
-  &:hover {
     color: white;
+    background: fade-out($gray-800, .5);
+
+    line-height: 45px;
+    &:focus,
+    &:hover {
+      color: white;
+    }
+    &:hover {
+      background: $gray-800;
+    }
+    i {
+      font-weight: 800;
+    }
   }
-  &:hover {
-    background: $gray-800;
+
+  footer.footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
-  i {
-    font-weight: 800;
+  
+  .social-link {
+    display: block;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4.3rem;
+    font-size: 1.5rem;
+    background-color: $primary;
+    transition: background-color 0.15s ease-in-out;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+    &:hover {
+      background-color: darken($primary, 10%);
+      text-decoration: none;
+    }
   }
+
 }
