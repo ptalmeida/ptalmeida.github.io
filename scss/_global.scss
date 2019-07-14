@@ -12,22 +12,7 @@ body {
     padding: 1.25rem 2.5rem;
   }
 
-  // Content Section
-  .content-section {
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
-  }
-
-  .content-section-heading {
-    h2 {
-      font-size: 3rem;
-    }
-    h3 {
-      font-size: 1rem;
-      text-transform: uppercase;
-    }
-  }
-
+  
   // Typography
   h1,
   h2,
@@ -70,11 +55,6 @@ body {
       font-weight: 800;
     }
   }
-
-  footer.footer {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
   
   .social-link {
     display: block;
@@ -91,4 +71,29 @@ body {
     }
   }
 
+  header, .callout {
+    h1, h2, h3 {
+      color: $gray-100;
+    }
+  }
+
+  .content-section {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+
+    .content-section-heading {
+      h2 {
+        font-size: 3rem;
+      }
+      h3 {
+        font-size: 1rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }
