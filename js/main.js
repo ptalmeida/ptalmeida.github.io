@@ -23,4 +23,13 @@
     }
   });
 
+  $(window).on('load', function() {
+    
+    function showBackground() {     
+      $(".masthead").removeClass("white-bg")
+    }
+    showBackground();
+
+   });
+
 })(jQuery); // End of use strict
