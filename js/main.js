@@ -1,3 +1,15 @@
+// GENERAL SETTING
+window.sr = ScrollReveal({ reset: false });
+
+// Custom Settings
+sr.reveal('.foo-1', { duration: 200 });
+
+sr.reveal('section .container, footer .container', { 
+  distance: '60%',
+  origin: 'bottom',
+  duration: 1000 
+});
+
 (function($) {
   "use strict"; // Start of use strict
 
