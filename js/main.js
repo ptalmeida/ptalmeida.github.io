@@ -11,6 +11,8 @@
 
   $(".js-scroll-trigger").click(function(e) {
     $("#sidebar-wrapper").removeClass("active");
+    $(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
+    $(".menu-toggle").removeClass("active");
   });
 
 
