@@ -81,6 +81,9 @@ body {
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
 
+    .container .row{
+      justify-content: center;
+    }
     .content-section-heading {
       h2 {
         font-size: 3rem;

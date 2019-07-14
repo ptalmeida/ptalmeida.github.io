@@ -77,6 +77,12 @@ body .content-section {
   padding-bottom: 7.5rem;
 }
 
+body .content-section .container .row {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 body .content-section .content-section-heading h2 {
   font-size: 3rem;
 }
