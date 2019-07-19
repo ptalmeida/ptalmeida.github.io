@@ -44,6 +44,7 @@
       -webkit-transition: -webkit-clip-path 0.25s ease-out;
       -webkit-clip-path: inset(-1px);
       clip-path: inset(-1px);
+      transition: 0.25s ease-out;
     }
     &:hover {
       img {
