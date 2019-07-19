@@ -6,12 +6,11 @@ const browsersync = require("browser-sync").create();
 const cleanCSS = require("gulp-clean-css");
 const del = require("del");
 const gulp = require("gulp");
-const header = require("gulp-header");
 const merge = require("merge-stream");
 const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
-const uglify = require("gulp-uglify");
+const terser = require('gulp-terser');
 
 // BrowserSync
 function browserSync(done) {
@@ -32,7 +31,8 @@ function browserSyncReload(done) {
 
 // Clean vendor
 function clean() {
-  return del(["./vendor/"]);
+  return del(['/vendor/',
+              '!/vendor/*.js']);
 }
 
 // Bring third party dependencies from node_modules into vendor directory
@@ -92,7 +92,7 @@ function js() {
       './js/*.js',
       '!./js/*.min.js'
     ])
-    .pipe(uglify())
+    .pipe(terser())
     .pipe(rename({
       suffix: '.min'
     }))
