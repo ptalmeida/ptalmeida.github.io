@@ -5,7 +5,7 @@ window.sr = ScrollReveal({ reset: false });
 sr.reveal('.foo-1', { duration: 200 });
 
 sr.reveal('section .container, footer .container', { 
-  distance: '60%',
+  distance: '40%',
   origin: 'bottom',
   duration: 1000 
 });
